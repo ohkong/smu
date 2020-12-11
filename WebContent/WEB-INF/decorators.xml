@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/layout">
+	<decorator name="member" page="memberlayout.jsp">
+		<pattern>/smu/member/*</pattern>
+	</decorator>
+	<decorator name="board" page="boardlayout.jsp">
+		<pattern>/smu/board/*</pattern>
+	</decorator>
+	<!-- sitemesh의 layout 설정 안함 -->
+	<excludes>
+		<pattern>/smu/member/id*</pattern>
+		<pattern>/smu/member/pw*</pattern>
+		<pattern>/smu/member/picture*</pattern>
+		<pattern>/smu/member/password*</pattern>
+		<pattern>/smu/board/imgupload*</pattern>
+	</excludes>
+</decorators>
